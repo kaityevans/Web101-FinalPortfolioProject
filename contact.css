@@ -78,9 +78,9 @@ header nav ul li a {
 }
 
 /* ~~~~~~~~~ MAIN~~~~~~~~~ */
-h1 {
+/* h1 {
   display:
-}
+} */
 
  .name, .email, .subject, .message {
   display: flex;
