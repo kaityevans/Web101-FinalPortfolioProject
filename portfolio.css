@@ -106,5 +106,89 @@ main div {
   border: 5px groove rgb(7, 7, 78);
   padding: 5px;
   background-color:rgb(132, 210, 210);
-  
 }
+
+@media (max-width: 576px) {
+  header nav {
+    width: 500px;
+    padding-left: 150px;
+    padding-bottom: 5px;
+  }
+  header nav ul {
+    flex-flow: column;
+  }
+  h1{
+    padding-left: 30px;
+    font-size: 50px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 577px) (min-width: 800px) {
+header nav {
+  width: 900px;
+  /* padding-left: 150px; */
+  padding-bottom: 5px;
+}
+header nav ul {
+  /* flex-flow: row; */
+  width: 900px;
+}
+h1{
+  padding-left: 330px;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+}
+
+@media (min-width: 700px) {
+  header nav {
+    width: 900px;
+    /* padding-left: 150px; */
+    padding-bottom: 5px;
+  }
+  header nav ul {
+    /* flex-flow: row; */
+    width: 900px;
+  }
+  h1{
+    padding-left: 330px;
+    padding-bottom: 10px;
+    font-size: 50px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  }
+
+  @media (min-width: 700px) {
+  header nav {
+    width: 900px;
+    /* padding-left: 150px; */
+    padding-bottom: 5px;
+  }
+  header nav ul {
+    /* flex-flow: row; */
+    width: 900px;
+  }
+  h1{
+    padding-left: 530px;
+    padding-bottom: 10px;
+    font-size: 50px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  }

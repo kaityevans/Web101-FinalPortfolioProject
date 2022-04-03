@@ -10,6 +10,7 @@ body {
 
 .NavBar {
   /* border: 1px solid red; */
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -69,7 +70,7 @@ header nav ul {
   flex-direction: row;
 }
 header nav {
-  width: 1000px;
+  width: 800px;
   /* padding: 56px; */
 }
 
@@ -112,18 +113,15 @@ h2 {
 }
 
 .box1, .box2, .box3 {
-  /* border: black solid 5px; */
   display: flex;
   justify-content: space-around;
   flex-flow: column;
   padding: 50px;
   padding-left: 150px;
-  padding-bottom: 1000px;
+  padding-bottom: 500px;
 }
 
 main div img {
-  /* border: black solid 2px; */
-  /* border-left: 50px; */
   width: 300px;
   display: flex;
   justify-content: center;
@@ -138,27 +136,36 @@ p {
 
 /* Small and up (Landscape Phones) */
 @media (max-width: 576px) {
+  header nav {
+    width: 500px;
+  }
+  header nav ul {
+    flex-flow: column;
+  }
   div {
       display: grid;
       grid-template-columns: auto;
-      /* text-align: center; */
+      text-align: center;
   }
   body {
       display: flex;
       justify-content: center;
       align-items: center;
   }
-  /* img {
-      /* padding-left: 0px; */
-      /* align-items: center;  */
-  }
   .box1, .box2, .box3 {
-      /* padding-right: 50px; */
       display: flex;
       justify-content: center;
+      padding-left: 50px;
+      padding-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
+  header nav {
+    width: 300px;
+  }
+  header nav ul li {
+    flex-flow: column;
+  }
   div {
       display: grid;
       grid-template-columns: auto;
@@ -174,7 +181,17 @@ p {
       padding-bottom: 10px;
       border: black solid 0px;
   }
+  .box1, .box2, .box3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-bottom: 20px;
 }
+main div img {
+  padding-left: 400px;
+}
+}
+
 @media (max-height: 767px) {
   div {
       display: grid;
@@ -191,13 +208,20 @@ p {
       padding-bottom: 10px;
       border: black solid 0px;
   }
+  .box1, .box2, .box3 {
+    padding-bottom: 50px;
+  }
+  main div img {
+    width: 500px;
+  }
 }
+
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
   div {
       display: grid;
       grid-template-columns: auto;
-      /* text-align: center; */
+      grid-template-rows: auto auto;
   }
   body {
       display: flex;
@@ -212,6 +236,14 @@ p {
   h2 {
       border-bottom: black solid 0px;
   }
+  .box1, .box2, .box3 {
+    padding-bottom: 100px;
+  }
+  main div img {
+    width: 700px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 /* Large and up (Desktops) */
@@ -219,7 +251,6 @@ p {
   div {
       display: grid;
       grid-template-columns: auto auto auto;
-      /* text-align: center; */
   }
   body {
       display: flex;
@@ -232,5 +263,18 @@ p {
   }
   h2 {
       border-bottom: black solid 3px;
+  }
+  .box1, .box2, .box3 {
+    padding: 10px;
+  }
+  main div img {
+    width: 450px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  p {
+    width: 380px;
+    padding-left: 40px;
+    padding-right: 10px;
   }
 }

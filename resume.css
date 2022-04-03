@@ -177,7 +177,7 @@ h3 {
   /* text-decoration: underline; */
   border-bottom: 2px solid grey;
   padding-bottom: 20px;
-  width: 700px;
+  width: 500px;
 }
 .Info ul {
   padding-left: 30px;
@@ -187,3 +187,36 @@ h3 {
   display: flex;
   align-items: flex-end;
 } */
+
+
+@media (max-width: 576px) {
+  header {
+    border: 0px solid slategray;
+  }
+  header nav {
+    width: 500px;
+    padding-left: 190px;
+  }
+  header nav ul {
+    flex-flow: column;
+  }
+  main {
+    display: grid;
+    width: 500px;
+    grid-template-columns: auto;
+    border: 2px solid black;
+  }
+  span h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+  h3 {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+  .rightColumn {
+    width: 450px;
+  }
+}
