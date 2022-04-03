@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background-color: aliceblue;
 }
 body {
   margin: 0;
@@ -39,12 +39,13 @@ header img {
   border: 2px dotted black;
 }
 
-header h1 {
+span h1 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
   font-size: 65px;
   padding-bottom: 10px;
-  
+  color: aliceblue;
+  background-color: slategray;
 }
 header {
   border: 1px solid black;
@@ -86,7 +87,7 @@ main {
 }
 
 img {
-  width: 150px;
+  width: 200px;
   border: 5px solid black;   
 }
 
@@ -136,7 +137,7 @@ header {
   justify-content: center; */
 /* } */
 .leftColumn {
-  border: 5px solid aqua;
+  border: 5px solid rgb(132, 210, 210);
   background-color: lightslategray;
 }
 .contact {
@@ -148,7 +149,7 @@ header {
 }
 
 .rightColumn {
-  border: 5px solid aqua;
+  border: 5px solid rgb(132, 210, 210);
   background-color: aliceblue;
 }
 .Title {
