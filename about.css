@@ -3,6 +3,7 @@
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 body {
   margin: 0;
@@ -51,10 +52,10 @@ header h3 {
   padding-bottom: 10px;
   
 }
-header {
+/* header {
   /* border: 1px solid black; */
   /* width: 1000px; */
-}
+
 header nav ul {
   padding: 25px;
   /* border: 1px solid red; */
